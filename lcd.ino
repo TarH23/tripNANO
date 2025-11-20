@@ -1,5 +1,11 @@
 // Menus
 
+char* func[] = {
+  "Part\0",
+  "Tot\0",
+  "Speed"
+};
+
 char* menu[] = {
   "Circ\0",
   "Reset"
@@ -33,11 +39,11 @@ void updateScreen() {
         lcd.print(displayValues[0], 2);
         break;
       case 1:
-       // Total
+       // Speed
         lcd.print(displayValues[1], 2);
         break;
       case 2:
-       // Speed km/h
+       // Total 
         lcd.print(displayValues[2], 2);
         break;
     }
